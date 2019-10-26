@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp"
+    android:background="#cefffd"
+    tools:context="applusiana.konversinilai.MainActivity">
+
+    <TextView
+        android:id="@+id/tvJudul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="KONVERSI NILAI"
+        android:textColor="#000"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvTugas"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Tugas"
+        android:textColor="#000"
+        android:layout_alignBaseline="@+id/etTugas"/>
+
+    <TextView
+        android:id="@+id/tvUts"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="UTS"
+        android:textColor="#000"
+        android:layout_alignBaseline="@+id/etUts"/>
+
+    <TextView
+        android:id="@+id/tvUas"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="UAS"
+        android:textColor="#000"
+        android:layout_alignBaseline="@+id/etUas"/>
+
+    <TextView
+        android:id="@+id/tvHuruf"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Nilai Huruf :"
+        android:textColor="#000"
+        android:layout_alignBaseline="@+id/etHuruf"/>
+
+    <TextView
+        android:id="@+id/tvPredikat"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Predikat :"
+        android:textColor="#000"
+        android:layout_alignBaseline="@+id/etPredikat"/>
+
+    <EditText
+        android:id="@+id/etTugas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:layout_below="@id/tvJudul"
+        android:layout_toRightOf="@+id/tvTugas"/>
+
+    <EditText
+        android:id="@+id/etUts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:layout_toRightOf="@+id/tvUts"
+        android:layout_below="@+id/etTugas"/>
+
+    <EditText
+        android:id="@+id/etUas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:layout_toRightOf="@id/tvUas"
+        android:layout_below="@+id/etUts"/>
+
+    <EditText
+        android:id="@+id/etHuruf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:layout_toRightOf="@id/tvHuruf"
+        android:layout_below="@id/etUas"/>
+
+    <EditText
+        android:id="@+id/etPredikat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:layout_toRightOf="@id/tvPredikat"
+        android:layout_below="@+id/etHuruf"/>
+
+    <Button
+        android:id="@+id/btnHitung"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etHuruf"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="46dp"
+        android:background="#ffd4e5"
+        android:text="HITUNG NILAI" />
+
+</RelativeLayout>
